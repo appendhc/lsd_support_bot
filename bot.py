@@ -17,7 +17,7 @@ import json
 import time
 from pprint import pprint
 
-API_TOKEN = 'token'
+API_TOKEN = '200157869:AAEv57P9MWb8w_X9ga86Kvslse9wnQ3CQP0'
 bot = telebot.TeleBot(API_TOKEN)
 
 with open('loggingids.json') as f:
@@ -34,7 +34,7 @@ def on_user_joins(m):
 				user.append(str(cid))
 				with open('chat.txt', 'a') as f:
 					f.write(str(cid)+"\n")
-			bot.send_message(cid, "Hi ty for invite me but now im not work in group í ½í¸‰\nIf you want to see all the cute guys behind the Bot type /credits í ½í¸‡")
+			bot.send_message(cid, "Hi ty for invite me but now im not work in group ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nIf you want to see all the cute guys behind the Bot type /credits ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")
 			print "New group received."
 			userwhogotadded = m.new_chat_participant.first_name
 			username = m.new_chat_participant.username
